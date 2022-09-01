@@ -10,3 +10,5 @@
 
 ### Test Image
 <img src="images/stephans_quintet.jpg" alt="NASA Webb telescope image of Stephan's Quintet, five galxies nearby in Earth's sky" height="800">
+
+### Test GIF
