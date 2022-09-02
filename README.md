@@ -5,7 +5,7 @@
 * [Launchpad Code 1](#Launchpad1)
 * [Media Test](#MediaTest)
 
-## Laundpad1
+## Launchpad1
 
 ### Description & Code
 This assignment had you use the serial monitor to print a launch countdown.
