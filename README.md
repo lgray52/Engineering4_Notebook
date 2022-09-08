@@ -2,7 +2,9 @@
 
 
 ## TableOfContents
-* [Launchpad Code 1](#Launchpad1)
+* Launchpad assignments
+    * [Launchpad Code 1](#Launchpad1)
+    * [Launchpad Code 2](#Launchpad2)
 * [Media Test](#MediaTest)
 
 ## Launchpad1
@@ -61,7 +63,7 @@ while True:
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/GrayLaunchpad2.py)
 
 ### Evidence
-![blink countdown]([link to github page for gif](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad2_evidence.gif))
+![blink countdown](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad2_evidence.gif)
 
 ### Wiring
 <img src="images/launchpad2_wiring.png" alt="pico with two leds" height="300">
