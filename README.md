@@ -31,7 +31,7 @@ for i in range(1, 10, 2)
 ```
 which would change the step to 2. So for this function, on the first time through the loop *i* would be 1, on the second time *i* would be 3, on the third it would be 5, etc. You can ask go backward, or add negative numbers, like in this assignment where I needed to count by -1 from 10 down to 1. 
 
-[Back to Table of Contents](#Table_of_Contents)
+[Back to Table of Contents](#TableOfContents)
 
 
 ## Launchpad2
@@ -104,7 +104,7 @@ while True:
 ### Reflection
 This assignment was a good introduction to infinite "while True" loops, which loop code continuously until it is turned off. It also serves a good intro to connecting LEDs as outputs and the syntax with digitalio required with that. Also, it's very neat that the Pico has 8 grounds (though it's seems a little excessive).
 
-[Back to Table of Contents](#Table_of_Contents)
+[Back to Table of Contents](#TableOfContents)
 
 
 ## Launchpad3
@@ -153,7 +153,7 @@ if button.value == False
 ```
 to check if the button is being pressed. The function is in an infinite "while" loop so it is always checking for the button to be pressed.
 
-[Back to Table of Contents](#Table_of_Contents)
+[Back to Table of Contents](#TableOfContents)
 
 
 ## Launchpad4
@@ -241,7 +241,7 @@ angle = angle_stop
 led.value = # True or False
 ```
 
-[Back to Table of Contents](#Table_of_Contents)
+[Back to Table of Contents](#TableOfContents)
 
 
 ## MediaTest
