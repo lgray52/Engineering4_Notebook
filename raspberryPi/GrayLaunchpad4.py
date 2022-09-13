@@ -23,19 +23,14 @@ myServo.angle = angle
 
 while True:
   if button.value == False:  # if button is pressed
-    for i in range(10, 3, -1):  # loop from 10-1, backwards by 1
-        # if button.value == False:
-        #     print("ABORT LAUNCH")
-        #     while button.value == True:
-        #         pass
-
+    for i in range(10, 3, -1):  # loop from 10-4, backwards by 1
         print(i)  # print out count
         ledRed.value = True  # blink on
         sleep(.5)  # one second between each count
         ledRed.value = False
         sleep(.5)  # blink off
 
-    for i in range(3, 0, -1):
+    for i in range(3, 0, -1):  # starting at t = -3s, in order to turn servo @ correct time
       print(i)
       ledRed.value = True
       angle_stop = angle + 30  # set stop point 30 degrees ahead of where angle is
