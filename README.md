@@ -147,7 +147,7 @@ while True:
 ![button activated launch countdown](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad3_evidence.gif)
 
 ### Reflection
-This assignment introduced buttons, but also the Pico's internal pull up resistors. These are very useful when controlling buttons, as buttons need to be pulled either up or down when they are set up, meaning they either do or don't have complete circuits as their default "off" state. I pulled my button UP, so the circuit is completed when it is in its "off" state, or when it is not pressed. When it is pressed, the circuit is broken and no longer connects to ground, meaning it reads to the board as "False." This is why I use the statement
+This assignment introduced buttons, but also the Pico's internal pull up resistors. These are very useful when controlling buttons, as buttons need to be pulled either up or down when they are set up, meaning they either do or don't have complete circuits as their default "off" state. I pulled my button UP, so the circuit is broken when it is in its "off" state, or when it is not pressed. When it is pressed, the circuit is completed and connects to ground, meaning it reads to the board as "False." This is why I use the statement
 ```python
 if button.value == False
 ```
