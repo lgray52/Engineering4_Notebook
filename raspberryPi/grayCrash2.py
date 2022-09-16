@@ -12,7 +12,7 @@ i2c = busio.I2C(sclPin, sdaPin)
 
 mpu = imu.MPU6050(i2c)  # set up mpu sensor accelerometer
 
-led = digitalio.DigitalInOut(board.GP16)  # connect led to board
+led = digitalio.DigitalInOut(board.GP15)  # connect led to board
 led.direction = digitalio.Direction.OUTPUT
 
 # in order to pull a fancy list (called a tuple) of the x, y, and z acceleration value in m/s^2, would call mpu.acceleration
@@ -20,6 +20,7 @@ led.direction = digitalio.Direction.OUTPUT
 
 while True:
     accelerationVals = mpu.acceleration
+
     print(f"X acceleration: {accelerationVals[0]} m/s2")
     print(f"Y acceleration: {accelerationVals[1]} m/s2")
     print(f"Z acceleration: {accelerationVals[2]} m/s2")
@@ -28,3 +29,7 @@ while True:
 
     if accelerationVals[2] <= 1:
         led.value = True
+        print("WARNING")
+    
+    else:
+        led.value = False
