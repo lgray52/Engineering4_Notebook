@@ -129,6 +129,24 @@ The accelerometer stores the x, y, and z acceleration values in a fancy list cal
 [Back to Table of Contents](#TableOfContents)
 
 
+## Crash2
+
+### Description & Code
+This assignment had the Pico activate a warning light when the sensor is tipped to 90 degrees, using the property of acceleration due to gravity. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash2.py)
+
+### Evidence
+![alt](link to github page for gif)
+
+### Wiring
+<img src="images/" alt="" height="300">
+
+### Reflection
+
+[Back to Table of Contents](#TableOfContents)
+
+
 ## MediaTest
 
 ### Test Link
