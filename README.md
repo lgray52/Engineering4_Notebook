@@ -9,7 +9,7 @@
    * [Launchpad Code 4](#Launchpad4)
 * **Crash Avoidance Assignments**
    * [Crash Avoidance 1](#Crash1)
-   * 
+   * [Crash Avoidance 2](#Crash2)
 * [Media Test](#MediaTest)
 
 ## Launchpad1
@@ -107,6 +107,24 @@ angle = angle_stop
 """blink LED"""
 led.value = # True or False
 ```
+
+[Back to Table of Contents](#TableOfContents)
+
+## Crash1
+
+### Description & Code
+This assignment introduced the use of an accelerometer/gyroscope, the MPU6050. This is useful for finding the acceleration of the module in the x, y, and z directions as well as the angular velocity. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash1.py)
+
+### Evidence
+![pico with MPU and acceleration vals printed to the screen of monitor](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash1Evidence.gif)
+
+### Wiring
+<img src="images/crash1_wiring.PNG" alt="wiring diagram with pico and accelerometer" height="300">
+
+### Reflection
+The accelerometer stores the x, y, and z acceleration values in a fancy list called a tuple. Pieces of a tuple can be accessed in the same manner as pieces of a list, meaning that you have to index each value. Indexing means refering to a value in a list by its numerical value in the list - the tricky thing about indexing is it starts counting from 0. So term 1 in the list would be 0, and term 2 would be 1, etc. For the tuple, this means that in order to pull the y-value, for example, you'd have to extract the second term by indexing [1]. The use of an f-string was also very cool, because it makes a string look waaayyyyy nicer than printing strings and variables in the normal way with them separtated by commas, which leaves weird little spaces between words and numbers. 
 
 [Back to Table of Contents](#TableOfContents)
 
