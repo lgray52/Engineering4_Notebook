@@ -49,7 +49,7 @@ The purpose of this assignment was to turn on LEDs in correspondence with the co
 ![blink countdown](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad2_evidence_better.gif)
 
 ### Wiring
-<img src="images/launchpad2_wiring.png" alt="pico with two leds" height="300">
+<img src="images/launchpad2_wiring.png" alt="pico with two leds" height="400">
 
 ### Reflection
 This assignment was a good introduction to infinite "while True" loops, which loop code continuously until it is turned off. It also serves a good intro to connecting LEDs as outputs and the syntax with digitalio required with that. Also, it's very neat that the Pico has 8 grounds (though it's seems a little excessive).
@@ -88,7 +88,7 @@ The final assignment in the Launchpad series adds the use of a servo motor. I di
 ![button activated countdown with servo](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad4Evidence.gif)
 
 ### Wiring
-<img src="images/launchpad4_wiring.PNG" alt="pico with leds, button, and servo" height="300">
+<img src="images/launchpad4_wiring.PNG" alt="pico with leds, button, and servo" height="400">
 
 ### Reflection
 I use several "for" loops to add small increments to the angle of the servo and still achieve the correct amount of time between each blink. In order to achieve that though, I repeatedly switched variable values with each other so that when the loop repeated again, the servo wouldn't be sent back to where it started before. This was a good reminder as to how variables take on values, and how to strategically switch them to store the values of important information to be used by the code in the future. For example, I set the variable "angle_stop" to keep the value of where the angle should stop in the loop, and after the end of every loop, I added the number of degrees I wanted it to go to in the next round. However, I stored the previous value of the angle where the servo stopped in my variable for the current angle, "angle." So between each LED blink, I looped something like this:
@@ -121,7 +121,7 @@ This assignment introduced the use of an accelerometer/gyroscope, the MPU6050. T
 ![pico with MPU and acceleration vals printed to the screen of monitor](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash1Evidence.gif)
 
 ### Wiring
-<img src="images/crash1_wiring.PNG" alt="wiring diagram with pico and accelerometer" height="300">
+<img src="images/crash1_wiring.PNG" alt="wiring diagram with pico and accelerometer" height="400">
 
 ### Reflection
 The accelerometer stores the x, y, and z acceleration values in a fancy list called a tuple. Pieces of a tuple can be accessed in the same manner as pieces of a list, meaning that you have to index each value. Indexing means refering to a value in a list by its numerical value in the list - the tricky thing about indexing is it starts counting from 0. So term 1 in the list would be 0, and term 2 would be 1, etc. For the tuple, this means that in order to pull the y-value, for example, you'd have to extract the second term by indexing [1]. The use of an f-string was also very cool, because it makes a string look waaayyyyy nicer than printing strings and variables in the normal way with them separtated by commas, which leaves weird little spaces between words and numbers. 
@@ -137,12 +137,13 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash2.py)
 
 ### Evidence
-![alt](link to github page for gif)
+![alt](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash2Evidence.gif)
 
 ### Wiring
-<img src="images/" alt="" height="300">
+<img src="images/crash2_wiring.PNG" alt="Pico wiring diagram with accelerometer and led, powerboost not included" height="400">
 
 ### Reflection
+The additional coding for this assignment was minimal, simply adding an if statement checking whether or not the accelerometer was experiencing a downwards z acceleration or not (as it approached 90).
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
