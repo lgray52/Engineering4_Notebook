@@ -1,16 +1,16 @@
-# Engineering4_Notebook
+# Engineering 4 Notebook
 
 
 ## Table Of Contents
 * **Launchpad assignments**
-   * [Launchpad Code 1](#Launchpad1)
-   * [Launchpad Code 2](#Launchpad2)
-   * [Launchpad Code 3](#Launchpad3)
-   * [Launchpad Code 4](#Launchpad4)
+   * [Launchpad Code 1](https://github.com/lgray52/Engineering4_Notebook#launchpad-1)
+   * [Launchpad Code 2](https://github.com/lgray52/Engineering4_Notebook#launchpad-2)
+   * [Launchpad Code 3](https://github.com/lgray52/Engineering4_Notebook#launchpad-3)
+   * [Launchpad Code 4](https://github.com/lgray52/Engineering4_Notebook#launchpad-4)
 * **Crash Avoidance Assignments**
-   * [Crash Avoidance 1](#Crash1)
-   * [Crash Avoidance 2](#Crash2)
-* [Media Test](#MediaTest)
+   * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
+   * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
+* [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
 
@@ -35,7 +35,7 @@ for i in range(1, 10, 2)
 ```
 which would change the step to 2. So for this function, on the first time through the loop *i* would be 1, on the second time *i* would be 3, on the third it would be 5, etc. You can ask go backward, or add negative numbers, like in this assignment where I needed to count by -1 from 10 down to 1. 
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
 ## Launchpad 2
@@ -54,7 +54,7 @@ The purpose of this assignment was to turn on LEDs in correspondence with the co
 ### Reflection
 This assignment was a good introduction to infinite "while True" loops, which loop code continuously until it is turned off. It also serves a good intro to connecting LEDs as outputs and the syntax with digitalio required with that. Also, it's very neat that the Pico has 8 grounds (though it's seems a little excessive).
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
 ## Launchpad 3
@@ -74,7 +74,7 @@ if button.value == False
 ```
 to check if the button is being pressed. The function is in an infinite "while" loop so it is always checking for the button to be pressed.
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
 ## Launchpad 4
@@ -108,7 +108,7 @@ angle = angle_stop
 led.value = # True or False
 ```
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 ## Crash Avoidance 1
 
@@ -126,7 +126,7 @@ This assignment introduced the use of an accelerometer/gyroscope, the MPU6050. T
 ### Reflection
 The accelerometer stores the x, y, and z acceleration values in a fancy list called a tuple. Pieces of a tuple can be accessed in the same manner as pieces of a list, meaning that you have to index each value. Indexing means refering to a value in a list by its numerical value in the list - the tricky thing about indexing is it starts counting from 0. So term 1 in the list would be 0, and term 2 would be 1, etc. For the tuple, this means that in order to pull the y-value, for example, you'd have to extract the second term by indexing [1]. The use of an f-string was also very cool, because it makes a string look waaayyyyy nicer than printing strings and variables in the normal way with them separtated by commas, which leaves weird little spaces between words and numbers. 
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
 ## Crash Avoidance 2
@@ -144,7 +144,7 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 
 ### Reflection
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
 ## Media Test
@@ -161,4 +161,4 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 ### Test GIF
 <img src="images/hamster_dance.gif" alt="animated hamsters dancing" height="300">
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
