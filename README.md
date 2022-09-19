@@ -1,7 +1,7 @@
 # Engineering4_Notebook
 
 
-## TableOfContents
+## Table Of Contents
 * **Launchpad assignments**
    * [Launchpad Code 1](#Launchpad1)
    * [Launchpad Code 2](#Launchpad2)
@@ -12,7 +12,7 @@
    * [Crash Avoidance 2](#Crash2)
 * [Media Test](#MediaTest)
 
-## Launchpad1
+## Launchpad 1
 
 ### Description & Code
 This assignment had you use the serial monitor to print a launch countdown.
@@ -38,7 +38,7 @@ which would change the step to 2. So for this function, on the first time throug
 [Back to Table of Contents](#TableOfContents)
 
 
-## Launchpad2
+## Launchpad 2
 
 ### Description & Code
 The purpose of this assignment was to turn on LEDs in correspondence with the countdown. In order to complete this, physical LEDs plugged into the Pico on a breadboard were required. 
@@ -57,7 +57,7 @@ This assignment was a good introduction to infinite "while True" loops, which lo
 [Back to Table of Contents](#TableOfContents)
 
 
-## Launchpad3
+## Launchpad 3
 
 ### Description & Code
 Instead of automatically starting the launch countdown when the code starts running, the purpose of this code was to be able to start the countdown with a button. This required a physical button, but also some understanding of the board and its circuits. 
@@ -77,7 +77,7 @@ to check if the button is being pressed. The function is in an infinite "while" 
 [Back to Table of Contents](#TableOfContents)
 
 
-## Launchpad4
+## Launchpad 4
 
 ### Description & Code
 The final assignment in the Launchpad series adds the use of a servo motor. I did the spicy version, which begins to move the servo on t = -3s, and completes moving the servo a full 180 degrees at liftoff. 
@@ -110,7 +110,7 @@ led.value = # True or False
 
 [Back to Table of Contents](#TableOfContents)
 
-## Crash1
+## Crash Avoidance 1
 
 ### Description & Code
 This assignment introduced the use of an accelerometer/gyroscope, the MPU6050. This is useful for finding the acceleration of the module in the x, y, and z directions as well as the angular velocity. 
@@ -129,7 +129,7 @@ The accelerometer stores the x, y, and z acceleration values in a fancy list cal
 [Back to Table of Contents](#TableOfContents)
 
 
-## Crash2
+## Crash Avoidance 2
 
 ### Description & Code
 This assignment had the Pico activate a warning light when the sensor is tipped to 90 degrees, using the property of acceleration due to gravity. 
@@ -147,7 +147,7 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 [Back to Table of Contents](#TableOfContents)
 
 
-## MediaTest
+## Media Test
 
 ### Test Link
 [link test](https://www.webhamster.com/)
