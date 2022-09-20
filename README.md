@@ -143,7 +143,7 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 <img src="images/crash2_wiring.PNG" alt="Pico wiring diagram with accelerometer and led, powerboost not included" height="400">
 
 ### Reflection
-The additional coding for this assignment was minimal, simply adding an if statement checking whether or not the accelerometer was experiencing a downwards z acceleration or not (as it approached 90).
+The additional coding for this assignment was minimal, simply adding an if statement checking whether or not the accelerometer was experiencing a downwards z acceleration or not (as z-acceleration approached 0). Because gravity provides a constant acceleration of 9.8 $m/s^2$, when the accelerometer is right-side up, the z acceleration is 9.8, whereas when its tipped on its side the acceleration is around zero. Since the accelerometer is not perfectly sensitive, I had the warning light turn on when the acceleration was less than or equal to one since that was about what I was getting when I put the sensor on its side. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
