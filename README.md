@@ -1,18 +1,22 @@
-# Engineering4_Notebook
+# Engineering 4 Notebook
 
 
-## TableOfContents
-* Launchpad assignments
-    * [Launchpad Code 1](#Launchpad1)
-    * [Launchpad Code 2](#Launchpad2)
-    * [Launchpad Code 3](#Launchpad3)
-    * [Launchpad Code 4](#Launchpad4)
-* [Media Test](#MediaTest)
+## Table Of Contents
+* **Launchpad assignments**
+   * [Launchpad Code 1](https://github.com/lgray52/Engineering4_Notebook#launchpad-1)
+   * [Launchpad Code 2](https://github.com/lgray52/Engineering4_Notebook#launchpad-2)
+   * [Launchpad Code 3](https://github.com/lgray52/Engineering4_Notebook#launchpad-3)
+   * [Launchpad Code 4](https://github.com/lgray52/Engineering4_Notebook#launchpad-4)
+* **Crash Avoidance Assignments**
+   * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
+   * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
+* [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
-## Launchpad1
+## Launchpad 1
 
 ### Description & Code
 This assignment had you use the serial monitor to print a launch countdown.
+
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/GrayLaunchpad1.py)
 
 ### Evidence
@@ -31,116 +35,33 @@ for i in range(1, 10, 2)
 ```
 which would change the step to 2. So for this function, on the first time through the loop *i* would be 1, on the second time *i* would be 3, on the third it would be 5, etc. You can ask go backward, or add negative numbers, like in this assignment where I needed to count by -1 from 10 down to 1. 
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
-## Launchpad2
+## Launchpad 2
 
 ### Description & Code
 The purpose of this assignment was to turn on LEDs in correspondence with the countdown. In order to complete this, physical LEDs plugged into the Pico on a breadboard were required. 
 
-```python
-# type: ignore
-
-from time import sleep
-import board
-import digitalio
-import pwmio
-from adafruit_motor import servo
-
-ledGreen = digitalio.DigitalInOut(board.GP15)  # set up green led, connnect to bottom left pin
-ledGreen.direction = digitalio.Direction.OUTPUT
-
-ledRed = digitalio.DigitalInOut(board.GP16)  # set up red led, connect to bottom right pin
-ledRed.direction = digitalio.Direction.OUTPUT
-
-button = digitalio.DigitalInOut(board.GP0)
-button.pull = digitalio.Pull.UP  # set up button to be True when NOT pressed
-
-servoSetup = pwmio.PWMOut(board.GP28, duty_cycle = 2 ** 15, frequency = 50)  # servo set up
-myServo = servo.Servo(servoSetup, min_pulse = 500, max_pulse = 2500)
-
-angle = 0  # set up variable for angle
-myServo.angle = angle
-
-while True:
-  if button.value == False:  # if button is pressed
-    for i in range(10, 3, -1):  # loop from 10-4, backwards by 1
-        print(i)  # print out count
-        ledRed.value = True  # blink on
-        sleep(.5)  # one second between each count
-        ledRed.value = False
-        sleep(.5)  # blink off
-
-    for i in range(3, 0, -1):  # starting at t = -3s, in order to turn servo @ correct time
-      print(i)
-      ledRed.value = True
-      angle_stop = angle + 30  # set stop point 30 degrees ahead of where angle is
-      for x in range(angle, angle_stop, 6):  # sweep servo for .5 seconds
-        myServo.angle = x
-        sleep(.1)
-      angle = angle_stop  # set current angle to where is stopped
-      ledRed.value = False
-      angle_stop = angle + 30  # set new stop for an additional 30 degrees
-      for x in range(angle, angle_stop, 6):  # sweep servo for the remaining .5 seconds
-        myServo.angle = x
-        sleep(.1)
-      angle = angle_stop  # and set angle to where it currently is again
-    
-    print("LIFTOFF") # once it counts down to 0, print liftoff
-    myServo.angle = 180
-
-    while True:
-        ledGreen.value = True  # keep the green light on
-```
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/GrayLaunchpad2.py)
 
 ### Evidence
 ![blink countdown](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad2_evidence_better.gif)
 
 ### Wiring
-<img src="images/launchpad2_wiring.png" alt="pico with two leds" height="300">
+<img src="images/launchpad2_wiring.png" alt="pico with two leds" height="400">
 
 ### Reflection
 This assignment was a good introduction to infinite "while True" loops, which loop code continuously until it is turned off. It also serves a good intro to connecting LEDs as outputs and the syntax with digitalio required with that. Also, it's very neat that the Pico has 8 grounds (though it's seems a little excessive).
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
-## Launchpad3
+## Launchpad 3
 
 ### Description & Code
 Instead of automatically starting the launch countdown when the code starts running, the purpose of this code was to be able to start the countdown with a button. This required a physical button, but also some understanding of the board and its circuits. 
 
-```python
-# type: ignore
-
-from time import sleep
-import board
-import digitalio
-
-ledGreen = digitalio.DigitalInOut(board.GP15)  # set up green led, connnect to bottom left pin
-ledGreen.direction = digitalio.Direction.OUTPUT
-
-ledRed = digitalio.DigitalInOut(board.GP16)  # set up red led, connect to bottom right pin
-ledRed.direction = digitalio.Direction.OUTPUT
-
-button = digitalio.DigitalInOut(board.GP0)
-button.pull = digitalio.Pull.UP  # set up button to be True when NOT pressed
-
-while True:
-  if button.value == False:  # if button is pressed
-    for i in range(10, 0, -1):  # loop from 10-1, backwards by 1
-        print(i)  # print out count
-        ledRed.value = True  # blink on
-        sleep(.5)  # one second between each count
-        ledRed.value = False
-        sleep(.5)  # blink off
-    print("LIFTOFF") # once it counts down to 0, print liftoff
-
-    while True:
-        ledGreen.value = True  # keep the green light on
-```
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/GrayLaunchpad3.py)
 
 ### Evidence, including wiring
@@ -153,75 +74,21 @@ if button.value == False
 ```
 to check if the button is being pressed. The function is in an infinite "while" loop so it is always checking for the button to be pressed.
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
-## Launchpad4
+## Launchpad 4
 
 ### Description & Code
 The final assignment in the Launchpad series adds the use of a servo motor. I did the spicy version, which begins to move the servo on t = -3s, and completes moving the servo a full 180 degrees at liftoff. 
 
-```python
-# type: ignore
-
-from time import sleep
-import board
-import digitalio
-import pwmio
-from adafruit_motor import servo
-
-ledGreen = digitalio.DigitalInOut(board.GP15)  # set up green led, connnect to bottom left pin
-ledGreen.direction = digitalio.Direction.OUTPUT
-
-ledRed = digitalio.DigitalInOut(board.GP16)  # set up red led, connect to bottom right pin
-ledRed.direction = digitalio.Direction.OUTPUT
-
-button = digitalio.DigitalInOut(board.GP0)
-button.pull = digitalio.Pull.UP  # set up button to be True when NOT pressed
-
-servoSetup = pwmio.PWMOut(board.GP28, duty_cycle = 2 ** 15, frequency = 50)  # servo set up
-myServo = servo.Servo(servoSetup, min_pulse = 500, max_pulse = 2500)
-
-angle = 0  # set up variable for angle
-myServo.angle = angle
-
-while True:
-  if button.value == False:  # if button is pressed
-    for i in range(10, 3, -1):  # loop from 10-1, backwards by 1
-        print(i)  # print out count
-        ledRed.value = True  # blink on
-        sleep(.5)  # one second between each count
-        ledRed.value = False
-        sleep(.5)  # blink off
-
-    for i in range(3, 0, -1):
-      print(i)
-      ledRed.value = True
-      angle_stop = angle + 30  # set stop point 30 degrees ahead of where angle is
-      for x in range(angle, angle_stop, 6):  # sweep servo for .5 seconds
-        myServo.angle = x
-        sleep(.1)
-      angle = angle_stop  # set current angle to where is stopped
-      ledRed.value = False
-      angle_stop = angle + 30  # set new stop for an additional 30 degrees
-      for x in range(angle, angle_stop, 6):  # sweep servo for the remaining .5 seconds
-        myServo.angle = x
-        sleep(.1)
-      angle = angle_stop  # and set angle to where it currently is again
-    
-    print("LIFTOFF") # once it counts down to 0, print liftoff
-    myServo.angle = 180
-
-    while True:
-        ledGreen.value = True  # keep the green light on
-```
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/GrayLaunchpad4.py)
 
 ### Evidence
 ![button activated countdown with servo](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/launchpad4Evidence.gif)
 
 ### Wiring
-<img src="images/launchpad4_wiring.PNG" alt="pico with leds, button, and servo" height="300">
+<img src="images/launchpad4_wiring.PNG" alt="pico with leds, button, and servo" height="400">
 
 ### Reflection
 I use several "for" loops to add small increments to the angle of the servo and still achieve the correct amount of time between each blink. In order to achieve that though, I repeatedly switched variable values with each other so that when the loop repeated again, the servo wouldn't be sent back to where it started before. This was a good reminder as to how variables take on values, and how to strategically switch them to store the values of important information to be used by the code in the future. For example, I set the variable "angle_stop" to keep the value of where the angle should stop in the loop, and after the end of every loop, I added the number of degrees I wanted it to go to in the next round. However, I stored the previous value of the angle where the servo stopped in my variable for the current angle, "angle." So between each LED blink, I looped something like this:
@@ -241,10 +108,47 @@ angle = angle_stop
 led.value = # True or False
 ```
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+## Crash Avoidance 1
+
+### Description & Code
+This assignment introduced the use of an accelerometer/gyroscope, the MPU6050. This is useful for finding the acceleration of the module in the x, y, and z directions as well as the angular velocity. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash1.py)
+
+### Evidence
+![pico with MPU and acceleration vals printed to the screen of monitor](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash1Evidence.gif)
+
+### Wiring
+<img src="images/crash1_wiring.PNG" alt="wiring diagram with pico and accelerometer" height="400">
+
+### Reflection
+The accelerometer stores the x, y, and z acceleration values in a fancy list called a tuple. Pieces of a tuple can be accessed in the same manner as pieces of a list, meaning that you have to index each value. Indexing means refering to a value in a list by its numerical value in the list - the tricky thing about indexing is it starts counting from 0. So term 1 in the list would be 0, and term 2 would be 1, etc. For the tuple, this means that in order to pull the y-value, for example, you'd have to extract the second term by indexing [1]. The use of an f-string was also very cool, because it makes a string look waaayyyyy nicer than printing strings and variables in the normal way with them separtated by commas, which leaves weird little spaces between words and numbers. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
-## MediaTest
+## Crash Avoidance 2
+
+### Description & Code
+This assignment had the Pico activate a warning light when the sensor is tipped to 90 degrees, using the property of acceleration due to gravity. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash2.py)
+
+### Evidence
+![alt](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash2Evidence.gif)
+
+### Wiring
+<img src="images/crash2_wiring.PNG" alt="Pico wiring diagram with accelerometer and led, powerboost not included" height="400">
+
+### Reflection
+The additional coding for this assignment was minimal, simply adding an if statement checking whether or not the accelerometer was experiencing a downwards z acceleration or not (as z-acceleration approached 0). Because gravity provides a constant acceleration of 9.8 $m/s^2$, when the accelerometer is right-side up, the z acceleration is 9.8, whereas when its tipped on its side the acceleration is around zero. Since the accelerometer is not perfectly sensitive, I had the warning light turn on when the acceleration was less than or equal to one since that was about what I was getting when I put the sensor on its side. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Media Test
 
 ### Test Link
 [link test](https://www.webhamster.com/)
@@ -258,4 +162,4 @@ led.value = # True or False
 ### Test GIF
 <img src="images/hamster_dance.gif" alt="animated hamsters dancing" height="300">
 
-[Back to Table of Contents](#TableOfContents)
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
