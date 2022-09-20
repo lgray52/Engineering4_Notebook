@@ -17,7 +17,7 @@ mpu = imu.MPU6050(i2c)  # set up mpu sensor accelerometer
 while True:
     accelerationVals = mpu.acceleration
     
-    print(f"X acceleration: {accelerationVals[0]} m/s2")
+    print(f"X acceleration: {accelerationVals[0]} m/s2") # take x value, value one, out of tuple and print
     print(f"Y acceleration: {accelerationVals[1]} m/s2")
     print(f"Z acceleration: {accelerationVals[2]} m/s2")
     print("")
