@@ -38,12 +38,17 @@ while True:
     line2 = f"y velocity: {round(angularVals[1], 3)}"
     line3 = f"z velocity: {round(angularVals[2], 3)}"
 
-    titleLine = label.LABEL(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y = 5)
-    firstLine = label.LABEL(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 10)
-    secondLine = label.LABEL(terminalio.FONT, text = line2, color = 0xFFFF00, x = 5, y = 15)
-    thirdLine = label.LABEL(terminalio.FONT, text = line3, color = 0xFFFF00, x = 5, y = 20)
-    
-    splash.append(titleLine, firstLine, secondLine, thirdLine)
+    titleLine = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y = 5)  # print to screen, and tell it where (coordinate) to start the text
+    splash.append(titleLine)  # add this line to splash
+
+    firstLine = label.Label(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 15)  # x-coordinate the same, changed the y-coordinate to
+    splash.append(firstLine)
+
+    secondLine = label.Label(terminalio.FONT, text = line2, color = 0xFFFF00, x = 5, y = 25)
+    splash.append(secondLine)
+
+    thirdLine = label.Label(terminalio.FONT, text = line3, color = 0xFFFF00, x = 5, y = 35)
+    splash.append(thirdLine)
 
     display.show(splash)
 

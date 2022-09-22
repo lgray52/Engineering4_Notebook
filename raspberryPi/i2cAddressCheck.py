@@ -3,10 +3,15 @@
 import board
 import time
 import busio
+import digitalio
 
+led = digitalio.DigitalInOut(board.LED)
+led.direction = digitalio.Direction.OUTPUT
 
-sda_pin = board.GP4
-scl_pin = board.GP5
+led.value = True
+
+sda_pin = board.GP2
+scl_pin = board.GP3
 i2c = busio.I2C(scl_pin, sda_pin)
 
 while not i2c.try_lock():

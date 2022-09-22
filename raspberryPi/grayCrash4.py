@@ -33,7 +33,7 @@ altimeter = adafruit_mpl3115a2.MPL3115A2(i2c)  # set up altimeter
 while True:
     accelerationVals = mpu.acceleration
     angularVals = mpu.gyro
-    altitude = altimeter.altitude
+    alt = altimeter.altitude
 
     splash = displayio.Group()
 
@@ -42,12 +42,18 @@ while True:
     line2 = f"y velocity: {round(angularVals[1], 3)}"
     line3 = f"z velocity: {round(angularVals[2], 3)}"
 
-    titleLine = label.LABEL(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y = 5)
-    firstLine = label.LABEL(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 10)
-    secondLine = label.LABEL(terminalio.FONT, text = line2, color = 0xFFFF00, x = 5, y = 15)
-    thirdLine = label.LABEL(terminalio.FONT, text = line3, color = 0xFFFF00, x = 5, y = 20)
-    
-    splash.append(titleLine, firstLine, secondLine, thirdLine)
+    titleLine = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y = 5)
+    splash.append(titleLine)
+
+    firstLine = label.Label(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 15)
+    splash.append(firstLine)
+
+    secondLine = label.Label(terminalio.FONT, text = line2, color = 0xFFFF00, x = 5, y = 25)
+    splash.append(secondLine)
+
+    thirdLine = label.Label(terminalio.FONT, text = line3, color = 0xFFFF00, x = 5, y = 35)
+    splash.append(thirdLine)
+
 
     display.show(splash)
 
@@ -57,7 +63,7 @@ while True:
     print("")
     sleep(.25)
 
-    if accelerationVals[2] <= 1:
+    if accelerationVals[2] <= 1 and alt <= 3:
         led.value = True
         print("WARNING")
     
