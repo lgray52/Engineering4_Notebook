@@ -41,7 +41,7 @@ while True:
     titleLine = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y = 5)  # print to screen, and tell it where (coordinate) to start the text
     splash.append(titleLine)  # add this line to splash
 
-    firstLine = label.Label(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 15)  # x-coordinate the same, changed the y-coordinate to
+    firstLine = label.Label(terminalio.FONT, text = line1, color = 0xFFFF00, x = 5, y = 15)  # x-coordinate the same, changed the y-coordinate to lower on screen
     splash.append(firstLine)
 
     secondLine = label.Label(terminalio.FONT, text = line2, color = 0xFFFF00, x = 5, y = 25)
