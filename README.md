@@ -10,6 +10,8 @@
 * **Crash Avoidance Assignments**
    * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
+   * [Crash Avoidance 3]
+   * [Crash Avoidance 4]
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
@@ -146,6 +148,46 @@ This assignment had the Pico activate a warning light when the sensor is tipped 
 The additional coding for this assignment was minimal, simply adding an if statement checking whether or not the accelerometer was experiencing a downwards z acceleration or not (as z-acceleration approached 0). Because gravity provides a constant acceleration of 9.8 $m/s^2$, when the accelerometer is right-side up, the z acceleration is 9.8, whereas when its tipped on its side the acceleration is around zero. Since the accelerometer is not perfectly sensitive, I had the warning light turn on when the acceleration was less than or equal to one since that was about what I was getting when I put the sensor on its side. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Crash Avoidance 3
+
+### Description & Code
+The purpose of this assignment was to print values for the angular acceleration to an OLED screen. This made use of the gyroscope feature of the accelerometer to measure angular acceleration.
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash3.py)
+
+### Evidence
+![changing vals on lcd screem](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash3Evidence.gif)
+
+### Wiring
+<img src="images/crash3_wiring.PNG" alt="pico with altimeter, lcd screen, and light" height="400">
+
+### Reflection
+Printing things to the screen was kind of trial and error - figuring out the positioning using the coordinate system took some messing around with. Ultimately, I decided that spacing lines at 10 apart in the y direction looked the best. Another useful little note is that you have to "append" each individual line to the splash group separately (append-ing something means adding a term to a list, in this case adding a line of text to the splash to give it information to display on the screen).
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Crash Avoidance 4
+
+### Description & Code
+The purpose of this (spicy) assignment was to deactivate the tilt warning light when a certain safe altitude is reached. By using values from the altimeter and conditional statements, this is relatively straight forward to accomplish. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayCrash4.py)
+
+### Evidence
+![admittedly very shaky video of the light turning off when 3m is reached](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/crash4_evidence.gif)
+
+### Wiring
+<img src="images/crash4_wiring.PNG" alt="" height="400">
+**Note:** the altimeter is represented here as an MPU because no diagram of the altimeter exists on the wiring diagram site. The wiring is the same - SCL and SDA pins go to pins on the board, and power and ground connect to their respective pins. 
+
+### Reflection
+Using an altimeter is a useful step towards the pi in the sky project, as it allows measuring the distance above ground. One important thing to keep in mind with this sensor is that it needed to be essentially calibrated by allowing the sensor to read what ground level is before lifting it off the ground, since the sensor uses pressure to measure distance relative to sea level. Unless you happen to be exactly at sea level, the altitude given will simply reflect height with respect to sea level rather than to the ground, so to measure height from the ground I included value definition for base ground level before entering the loop, where I check the current altitude each time it runs. This allowed me to subtract ground level from the current altitude to find the altitude of the sensor relative to the ground. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
 
 
 ## Media Test
