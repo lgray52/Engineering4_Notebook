@@ -10,8 +10,8 @@
 * **Crash Avoidance Assignments**
    * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
-   * [Crash Avoidance 3]
-   * [Crash Avoidance 4]
+   * [Crash Avoidance 3](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-3)
+   * [Crash Avoidance 4](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-4)
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
