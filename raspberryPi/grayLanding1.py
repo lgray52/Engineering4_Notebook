@@ -1,5 +1,7 @@
-from grayLandingLib import findArea
+from grayLandingLib import enterCoordinates, findArea
 
-areas = findArea(4, 3, 5, 6, 7, 9)
-print(f"determinant area value: {areas[0]}")
-print(f"ugly formula area value: {areas[1]}")
+while True:
+    x1, y1, x2, y2, x3, y3 = enterCoordinates()
+    area = findArea(x1, y1, x2, y2, x3, y3)
+
+    print(f"The area of triangle with vertices at ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}) kilometers is {area} square kilometers")
