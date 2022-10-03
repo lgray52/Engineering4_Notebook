@@ -189,6 +189,25 @@ Using an altimeter is a useful step towards the pi in the sky project, as it all
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
+## Landing Area 1
+
+### Description & Code
+The purpose of this assignment was to use functions to calculate the area of a triangle given it's vertices. I created a library for the functions involved and imported them to the main script.
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding1.py)
+
+[Link to Library for Functions](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib.py)
+
+### Evidence
+![code on vs code. asks for vertices and returns area in serial monitor.](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/landing1Evidence.gif)
+
+*No wiring was involved.*
+
+### Reflection
+
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
 
 ## Media Test
 
