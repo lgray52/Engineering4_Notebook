@@ -12,6 +12,10 @@
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
    * [Crash Avoidance 3](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-3)
    * [Crash Avoidance 4](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-4)
+* **Landing Area Assignments**
+  *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
+  *  Landing 2
+  *  Landing 3
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
@@ -196,7 +200,7 @@ The purpose of this assignment was to use functions to calculate the area of a t
 
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding1.py)
 
-[Link to Library for Functions](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib.py)
+[Link to Library for Functions](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib1.py)
 
 ### Evidence
 ![code on vs code. asks for vertices and returns area in serial monitor.](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/landing1Evidence.gif)
@@ -204,7 +208,7 @@ The purpose of this assignment was to use functions to calculate the area of a t
 *No wiring was involved.*
 
 ### Reflection
-
+This assignment was a good introduction to functions. I put my functions into a library then imported them to the file. I definitely could have done the area calculation in a much more simple way, but before I realised that I had already made a matrix, so I just used the determinant of the matrix to find the area. One important thing this assignment introduced was the try and except loop. The syntax of this loop is a little confusing, but its a little simpler if you think of it as an error scanner. If what's in the "try" loop doesn't produce an error, the code continues without entering the "except" loop. But, if the "try" loop creates an error, like being unable to convert a letter to a number in the context of this assignment, the function enters the "except" and does that instead. This is useful for prompting a correct input if the user inputs something in the incorrect formatting. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
