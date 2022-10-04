@@ -219,6 +219,7 @@ This assignment was a good introduction to functions. I put my functions into a 
 This assignment used an LED screen to show where the triangular landing area is with respect to the base. 
 
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding2.py)
+
 [Link to Function Library](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib2.py)
 
 ### Evidence
