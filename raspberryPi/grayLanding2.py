@@ -1,7 +1,8 @@
 # type: ignore
 
-from grayLandingLib import enterCoordinates, findAreaPico
+from grayLandingLib2 import enterCoordinates, findAreaPico
 import board
+from adafruit_display_text import label
 import adafruit_displayio_ssd1306
 import terminalio
 import displayio
@@ -40,7 +41,8 @@ while True:
     origin = Circle(64, 32, 5, outline = 0xFFFF00)  # draw a little circle at the origin/base location
     splash.append(origin)
 
-    triangle = Triangle(int(x1), int(y1), int(x2), int(y2), int(x3), int(y3), outline = 0xFFFF00)
-    splash.append(triangle)
+    # need to manipulate the coordinates so they are in the right place on the screen with respect to the center of the screen, (64, 32)
+    triangle = Triangle(int(x1) + 64, 32 - int(y1), int(x2) + 64, 32 - int(y2), int(x3) + 64, 32 - int(y3), outline = 0xFFFF00)
+    splash.append(triangle)  # plot the triangle with the given points. need integers because no decimal pixels
 
     display.show(splash)

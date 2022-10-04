@@ -1,4 +1,4 @@
-# import numpy as np
+import numpy as np
 
 def enterCoordinates():
     while True:
@@ -12,15 +12,10 @@ def enterCoordinates():
             print("Incorrect input format. Please try again.")  # if the coordinates entered aren't numbers, they can't be converted into floats, and the try will not complete
 
 
-# def findArea(x1, y1, x2, y2, x3, y3):  # takes all of the coordinates
-#     array = np.array([[x1, y1, 1],  # use matrix to get determinant for area
-#                       [x2, y2, 1],
-#                       [x3, y3, 1]])
-#     area = (1/2)*abs(np.linalg.det(array))  # 1/2 the absolute val of the determinant of the matrix = the area of triangle
+def findArea(x1, y1, x2, y2, x3, y3):  # takes all of the coordinates
+    array = np.array([[x1, y1, 1],  # use matrix to get determinant for area
+                      [x2, y2, 1],
+                      [x3, y3, 1]])
+    area = (1/2)*abs(np.linalg.det(array))  # 1/2 the absolute val of the determinant of the matrix = the area of triangle
     
-#     return area
-
-def findAreaPico(x1, y1, x2, y2, x3, y3):
-    area = (1/2)*abs(x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2))
-
     return area
