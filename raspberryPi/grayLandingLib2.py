@@ -1,4 +1,4 @@
-# import numpy as np
+from math import mean, sqrt
 
 def enterCoordinates():
     while True:
@@ -16,3 +16,14 @@ def findAreaPico(x1, y1, x2, y2, x3, y3):
     area = (1/2)*abs(x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2))
 
     return area
+
+def centroidDistance(x1, y1, x2, y2, x3, y3):
+    xvals = [x1, x2, x3]
+    xCentroid = mean(xvals)
+
+    yvals = [y1, y2, y3]
+    yCentroid = mean(yvals)
+
+    distance = sqrt((xCentroid**2) + (yCentroid**2))
+
+    return distance
