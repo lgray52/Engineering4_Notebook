@@ -14,7 +14,7 @@
    * [Crash Avoidance 4](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-4)
 * **Landing Area Assignments**
   *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
-  *  Landing 2
+  *  [Landing 2](https://github.com/lgray52/Engineering4_Notebook#landing-area-2)
   *  Landing 3
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
@@ -208,9 +208,30 @@ The purpose of this assignment was to use functions to calculate the area of a t
 *No wiring was involved.*
 
 ### Reflection
-This assignment was a good introduction to functions. I put my functions into a library then imported them to the file. I definitely could have done the area calculation in a much more simple way, but before I realised that I had already made a matrix, so I just used the determinant of the matrix to find the area. One important thing this assignment introduced was the try and except loop. The syntax of this loop is a little confusing, but its a little simpler if you think of it as an error scanner. If what's in the "try" loop doesn't produce an error, the code continues without entering the "except" loop. But, if the "try" loop creates an error, like being unable to convert a letter to a number in the context of this assignment, the function enters the "except" and does that instead. This is useful for prompting a correct input if the user inputs something in the incorrect formatting. 
+This assignment was a good introduction to functions. I put my functions into a library then imported them to the file. I definitely could have done the area of a triangle calculation in a much more simple way, but before I realised that I had already made a matrix, so I just used the determinant of the matrix to find the area. One important thing this assignment introduced was the try and except loop. The syntax of this loop is a little confusing, but its a little simpler if you think of it as an error scanner. If what's in the "try" loop doesn't produce an error, the code continues without entering the "except" loop. But, if the "try" loop creates an error, like being unable to convert a letter to a number in the context of this assignment, the function enters the "except" and does that instead. This is useful for prompting a correct input if the user inputs something in the incorrect formatting. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Landing Area 2
+
+### Description & Code
+This assignment used an LED screen to show where the triangular landing area is with respect to the base. 
+
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding2.py)
+[Link to Function Library](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib2.py)
+
+### Evidence
+![serial monitor and w/ pico triangle on screen](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/landing2Evidence.gif)
+
+### Wiring
+<img src="images/landing2_wiring.PNG" alt="pico with OLED screen" height="400">
+
+### Reflection
+The main kicker with this assignment was really just remembering all the libraries you need because the OLED screen needs so. many. libraries. But after that, it was important to remember how the coordinate system works with the screen. Because the center, which I made the origin, is located at (64, 32), and because the y-axis counts up as you go down the screen, you need to add adjustments to the received vertices. In order to count from the origin, you need to add 64 to the x coordinates, and in order to adjust for the position of the origin, you need to subtract the y-coordinate from 32. The y-coordinate is a little stranger, but in order to get a point above the middle of the screen where the y-value is 32, you need a smaller number. So, the regular coordinate needs to be subtracted from 32. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
 
 
 ## Media Test
