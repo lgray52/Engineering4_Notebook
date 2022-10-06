@@ -1,6 +1,7 @@
 # type: ignore
 
-from grayLandingLib2 import enterCoordinates, findAreaPico, centroidDistance
+from webbrowser import get
+from grayLandingLib3 import enterCoordinates, areaDistance, centroidDistance, coordinateSeparator
 import board
 from adafruit_display_text import label
 import adafruit_displayio_ssd1306
@@ -24,18 +25,17 @@ display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
 points = [['-50,-17,-57,12,-22,-7'],['28,-14,60,-7,54,18'],['45,30,51,-1,18,6'],['5,5,19,15,22,10']]
 
 while True:
-    # x1, y1, x2, y2, x3, y3 = enterCoordinates()
-    # area = findAreaPico(x1, y1, x2, y2, x3, y3)
-
-    # print(f"The area of triangle with vertices at ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}) kilometers is {area} square kilometers")
-
-    areas = []
+    triangleVals = []
     for i in range(len(points)):
-        findArea = findAreaPico(points[i, 0], points[i, 1], points[i, 2], points[i, 3], points[i, 4], points[i, 5])
-        areas.append(findArea)
+        getCoors = coordinateSeparator(points[i])
+        vals = areaDistance(getCoors[0], getCoors[1], getCoors[2], getCoors[3], getCoors[4], getCoors[5])
+        triangleVals.appends(vals)
+
+    for i in range(len(triangleVals)):
+        for j in range(len(i)):
+            
 
     
-
 
     splash = displayio.Group()  # make display group
 
