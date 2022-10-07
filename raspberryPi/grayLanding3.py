@@ -1,6 +1,6 @@
 # type: ignore
 
-from grayLandingLib3 import enterCoordinates, areaDistance, centroidDistance, coordinateSeparator
+from grayLandingLib3 import areaDistance, coordinateSeparator
 import board
 from adafruit_display_text import label
 import adafruit_displayio_ssd1306
