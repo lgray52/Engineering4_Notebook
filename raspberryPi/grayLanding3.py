@@ -1,6 +1,5 @@
 # type: ignore
 
-from webbrowser import get
 from grayLandingLib3 import enterCoordinates, areaDistance, centroidDistance, coordinateSeparator
 import board
 from adafruit_display_text import label
@@ -32,8 +31,8 @@ while True:
         triangleVals.appends(vals)
 
     for i in range(len(triangleVals)):
-        for j in range(len(i)):
-            
+        if triangleVals[i, 0] <= 100:
+            del triangleVals[i]
 
     
 
