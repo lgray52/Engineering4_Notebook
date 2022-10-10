@@ -1,11 +1,9 @@
-from math import mean, sqrt
+from math import sqrt
 
 def centroidDistance(x1, y1, x2, y2, x3, y3):
-    xvals = [x1, x2, x3]
-    xCentroid = mean(xvals)  # find the center point for the x coordinates
+    xCentroid = (x1 + x2 + x3)/3  # find the center point for the x coordinates
 
-    yvals = [y1, y2, y3]
-    yCentroid = mean(yvals)  # find the center point for the y coordinates
+    yCentroid = (y1 + y2 + y3)/3  # find the center point for the y coordinates
 
     distance = sqrt((xCentroid**2) + (yCentroid**2))  # find the distance from the origin
 
