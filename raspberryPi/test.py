@@ -1,4 +1,5 @@
-from grayLandingLib import findAreaPico
+array = [[1, 2, 4],
+         [4, 6, 7],
+         [9, 12, 3]]
 
-area = findAreaPico(-10, 6, -54, 19, -60, -30)
-print(area)
+print(array[0:0])

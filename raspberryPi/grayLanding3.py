@@ -23,15 +23,18 @@ i2c = busio.I2C(sclPin, sdaPin)
 display_bus = displayio.I2CDisplay(i2c, device_address = 0x3d, reset = board.GP5)  # set up oled screen - device address from test code
 display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
 
-points = [['-50,-17,-57,12,-22,-7'],['28,-14,60,-7,54,18'],['45,30,51,-1,18,6'],['5,5,19,15,22,10']]
+points = [['-50, -17, -57, 12, -22, -7'],['28, -14, 60, -7, 54, 18'],['45, 30, 51, -1, 18, 6'],['5, 5, 19, 15, 22, 10']]
 
 triangleVals = []  # make a blank list to store area and centroids of triangles
 
 for i in range(len(points)):
+    print(points[i])
     x1, y1, x2, y2, x3, y3 = coordinateSeparator(points[i])  # separate the coordinates from each section of the list
     vals = areaDistance(x1, y1, x2, y2, x3, y3)  # find the values from those vertices
     triangleVals.append(vals)  # add the area and centroids of each triangle
+    print(vals)
     area = vals[0]  # relevant area
+    centroid = vals[1]
 
     splash = displayio.Group()  # make display group
 
@@ -53,16 +56,20 @@ for i in range(len(points)):
 
     display.show(splash)
 
-    sleep(1)
+    sleep(2)
+
+print(triangleVals)
 
 for i in range(len(triangleVals)):  # delete triangles with area less than 100 square km
-    if triangleVals[i, 0] <= 100:
+    if triangleVals[i][0] <= 100:
         del triangleVals[i]
         del points[i]
 
+print(points)
+
 centroids = []  # blank list for centroid distances
 for i in range(len(triangleVals)):
-    centroids.append(triangleVals[i, 1])  # add the centroid distances to list
+    centroids.append(triangleVals[i][1])  # add the centroid distances to list
     
 closest = min(centroids)  # find the minimum centroid distance
 closestIndex = centroids.index(closest)  # find its index in the list, which corresponds to its index in the list of points

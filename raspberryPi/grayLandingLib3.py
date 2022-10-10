@@ -21,7 +21,9 @@ def enterCoordinates():
             print("Incorrect input format. Please try again.")  # if the coordinates entered aren't numbers, they can't be converted into floats, and the try will not complete
 
 def coordinateSeparator(nums):
-    coors = nums.split(',')
+    txt = nums[0]
+    x1, y1, x2, y2, x3, y3 = txt.split(',')
+    coors = [float(x1), float(y1), float(x2), float(y2), float(x3), float(y3)]
 
     return coors
 
@@ -31,4 +33,4 @@ def areaDistance(x1, y1, x2, y2, x3, y3):
 
     distance = centroidDistance(x1, y1, x2, y2, x3, y3)
 
-    return area, distance
+    return [area, distance]
