@@ -23,8 +23,8 @@ i2c = busio.I2C(sclPin, sdaPin)
 display_bus = displayio.I2CDisplay(i2c, device_address = 0x3d, reset = board.GP5)  # set up oled screen - device address from test code
 display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
 
-points = [['-50, -17, -57, 12, -22, -7'],['28, -14, 60, -7, 54, 18'],['45, 30, 51, -1, 18, 6'],['5, 5, 19, 15, 22, 10']]
-# points = [['-2, -30, -19, -8, -44, -18'],['7, -14, 60, -7, 33, -6'],['5,5,-8,9,0,-6'],['63,30,60,19,29,16']]
+# points = [['-50, -17, -57, 12, -22, -7'],['28, -14, 60, -7, 54, 18'],['45, 30, 51, -1, 18, 6'],['5, 5, 19, 15, 22, 10']]
+points = [['-2, -30, -19, -8, -44, -18'],['7, -14, 60, -7, 33, -6'],['5,5,-8,9,0,-6'],['63,30,60,19,29,16']]
 
 triangleVals = []  # make a blank list to store area and centroids of triangles
 
