@@ -24,6 +24,7 @@ display_bus = displayio.I2CDisplay(i2c, device_address = 0x3d, reset = board.GP5
 display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
 
 points = [['-50, -17, -57, 12, -22, -7'],['28, -14, 60, -7, 54, 18'],['45, 30, 51, -1, 18, 6'],['5, 5, 19, 15, 22, 10']]
+# points = [['-2, -30, -19, -8, -44, -18'],['7, -14, 60, -7, 33, -6'],['5,5,-8,9,0,-6'],['63,30,60,19,29,16']]
 
 triangleVals = []  # make a blank list to store area and centroids of triangles
 
@@ -60,10 +61,14 @@ for i in range(len(points)):
 
 print(triangleVals)
 
+badTriangles = []
 for i in range(len(triangleVals)):  # delete triangles with area less than 100 square km
     if triangleVals[i][0] <= 100:
-        del triangleVals[i]
-        del points[i]
+        badTriangles.append(i)  # save a list of the indexes of the bad triangles
+
+for i in range(len(badTriangles)):
+    del triangleVals[badTriangles[i]]  # delete the bad triangles from the lists of triangle vals and the original triangle points list
+    del points[badTriangles[i]]
 
 print(points)
 
@@ -77,14 +82,13 @@ closestIndex = centroids.index(closest)  # find its index in the list, which cor
 x1, y1, x2, y2, x3, y3 = coordinateSeparator(points[closestIndex])  # use the index found to get the points from the points list
 areaPlusCentroid = areaDistance(x1, y1, x2, y2, x3, y3)  # get the distance and centroid
 
-txt = f"The closest suitable landing area has vertices ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}). The area is {areaPlusCentroid[0]} km2 and the centroid is {areaPlusCentroid[1]} km away from base."
-print(txt)
+txt = f"Closest Area: {round(areaPlusCentroid[0], 2)} \n km2 \n Centroid: {round(areaPlusCentroid[1], 2)} km \n away from base."
+print(f"The closest suitable landing area has vertices ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}). The area is {areaPlusCentroid[0]} km2 and the centroid is {areaPlusCentroid[1]} km away from base.")
 
 splash = displayio.Group()  # make display group
 
 showText = label.Label(terminalio.FONT, text = txt, color = 0xFFFF00, x = 5, y = 5)
 splash.append(showText)
 
-display.show(splash)
-
-sleep(5)
+while True:
+    display.show(splash)
