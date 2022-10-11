@@ -15,7 +15,7 @@
 * **Landing Area Assignments**
   *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
   *  [Landing 2](https://github.com/lgray52/Engineering4_Notebook#landing-area-2)
-  *  Landing 3
+  *  [Landing 3](https://github.com/lgray52/Engineering4_Notebook#landing-area-3)
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
@@ -230,6 +230,25 @@ This assignment used an LED screen to show where the triangular landing area is 
 
 ### Reflection
 The main kicker with this assignment was really just remembering all the libraries you need because the OLED screen needs so. many. libraries. But after that, it was important to remember how the coordinate system works with the screen. Because the center, which I made the origin, is located at (64, 32), and because the y-axis counts up as you go down the screen, you need to add adjustments to the received vertices. In order to count from the origin, you need to add 64 to the x coordinates, and in order to adjust for the position of the origin, you need to subtract the y-coordinate from 32. The y-coordinate is a little stranger, but in order to get a point above the middle of the screen where the y-value is 32, you need a smaller number. So, the regular coordinate needs to be subtracted from 32. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Landing Area 3
+
+### Description & Code
+
+
+[Link to Code](link to github page for code)
+
+### Evidence
+![alt](link to github page for gif)
+
+### Wiring
+<img src="images/" alt="" height="400">
+
+### Reflection
+
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
