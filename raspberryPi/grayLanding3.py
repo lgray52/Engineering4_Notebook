@@ -77,11 +77,14 @@ closestIndex = centroids.index(closest)  # find its index in the list, which cor
 x1, y1, x2, y2, x3, y3 = coordinateSeparator(points[closestIndex])  # use the index found to get the points from the points list
 areaPlusCentroid = areaDistance(x1, y1, x2, y2, x3, y3)  # get the distance and centroid
 
-text = f"The closest suitable landing area has vertices ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}). The area is {areaPlusCentroid[0]} km2 and the centroid is {areaPlusCentroid[1]} km away from base."
-    
+txt = f"The closest suitable landing area has vertices ({x1}, {y1}), ({x2}, {y2}), and ({x3}, {y3}). The area is {areaPlusCentroid[0]} km2 and the centroid is {areaPlusCentroid[1]} km away from base."
+print(txt)
+
 splash = displayio.Group()  # make display group
 
-showText = label.Label(terminalio.FONT, text = f"{round(area, 2)} km2", color = 0xFFFF00, x = 5, y = 5)
+showText = label.Label(terminalio.FONT, text = txt, color = 0xFFFF00, x = 5, y = 5)
 splash.append(showText)
 
 display.show(splash)
+
+sleep(5)
