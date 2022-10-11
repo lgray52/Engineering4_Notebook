@@ -240,6 +240,7 @@ The main kicker with this assignment was really just remembering all the librari
 This spicy assignment was to take a list of triangles, print a visualisation of each one to the OLED, and find the closest one with an area greater than 100 square kilometers. I used several aspects of lists and indexing to achieve this. 
 
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding3.py)
+
 [Link to Library](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib3.py)
 
 ### Evidence
@@ -264,10 +265,9 @@ not
 ``` python
 nums[i, j]
 ```
-That little fact caused a LOT of confusion. 
+That little fact caused a LOT of confusion. Most of the rest of anything confusing is in my comments.
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
-
 
 
 ## Media Test
