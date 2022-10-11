@@ -237,21 +237,37 @@ The main kicker with this assignment was really just remembering all the librari
 ## Landing Area 3
 
 ### Description & Code
+This spicy assignment was to take a list of triangles, print a visualisation of each one to the OLED, and find the closest one with an area greater than 100 square kilometers. I used several aspects of lists and indexing to achieve this. 
 
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLanding3.py)
 
-[Link to Code](link to github page for code)
+[Link to Library](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayLandingLib3.py)
 
 ### Evidence
-![alt](link to github page for gif)
+**Test case 1:** 
+
+![](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/landing3Evidence1.gif)
+
+**Test Case 2:**
+
+![](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/landing3Evidence2.gif)
 
 ### Wiring
-<img src="images/" alt="" height="400">
+<img src="images/landing2_wiring.PNG" alt="" height="400">
+*Same as Landing 2*
 
 ### Reflection
-
+I used a lot of "for" loops in this code to cycle through each of the triangles in the list. I also used indexing within "for" loops a bunch. One thing I forgot about indexing is that in order to pull an item from a list within a list, the syntax is
+``` python
+nums[i][j]
+```
+not
+``` python
+nums[i, j]
+```
+That little fact caused a LOT of confusion. Most of the rest of anything confusing is in my comments.
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
-
 
 
 ## Media Test
