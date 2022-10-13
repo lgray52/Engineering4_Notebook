@@ -288,7 +288,7 @@ This assignment was pretty straightforward. The use of the
 ``` python
 for letter in message
 ```
-is pretty nifty, because it makes doing something based on each letter in the text to translate and then referring to that same letter in the loop super easy. The one thing that tripped me up was checking for the quit statement using an if statement - I forgot that it would be formatted as a list and spent a good deal of time trying to figure out the problem before using a print statement in the relevant if statement to check if it was every entering the loop. Print statements were very useful for identifying check points throughout this assignment. 
+is pretty nifty, because it makes taking each letter in the text to translate and then referring to that same letter in the loop super easy. The one thing that tripped me up was checking for the quit statement using an if statement - I forgot that it would be formatted as a list and spent a good deal of time trying to figure out the problem before using a print statement in the relevant if statement to check if it was ever entering the loop. Print statements were very useful for identifying check points throughout this assignment. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
@@ -296,7 +296,7 @@ is pretty nifty, because it makes doing something based on each letter in the te
 ## Morse Code 2
 
 ### Description & Code
-This assignment extends the translation of morse code into transmission by blinking an LED. 
+This assignment extends the translation of morse code into transmission by blinking an LED. The length of the blink for a dash has to be three times longer than a dot. 
 
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayMorseCode2.py)
 
@@ -304,10 +304,10 @@ This assignment extends the translation of morse code into transmission by blink
 ![alt](link to github page for gif)
 
 ### Wiring
-<img src="images/" alt="" height="400">
+<img src="images/morse2_wiring.png" alt="" height="400">
 
 ### Reflection
-
+This assignment was a good extension of the first one. I did have to modify my original code a little bit to store the full message in morse code, but other than that, this assignment basically just added a couple if statements. The "for character in message" loop also comes in very handy here for going through each of the characters and blinking a certain length of time for each different character. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
