@@ -16,6 +16,9 @@
   *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
   *  [Landing 2](https://github.com/lgray52/Engineering4_Notebook#landing-area-2)
   *  [Landing 3](https://github.com/lgray52/Engineering4_Notebook#landing-area-3)
+* **Morse Code Assignments**
+  *  [Morse Code 1](https://github.com/lgray52/Engineering4_Notebook#morse-code-1)
+  *  [Morse Code 2](https://github.com/lgray52/Engineering4_Notebook#morse-code-2)
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
 
 ## Launchpad 1
@@ -266,6 +269,44 @@ not
 nums[i, j]
 ```
 That little fact caused a LOT of confusion. Most of the rest of anything confusing is in my comments.
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Morse Code 1
+
+### Description & Code
+
+
+[Link to Code](link to github page for code)
+
+### Evidence
+![alt](link to github page for gif)
+
+### Wiring
+<img src="images/" alt="" height="400">
+
+### Reflection
+
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## Morse Code 2
+
+### Description & Code
+
+
+[Link to Code](link to github page for code)
+
+### Evidence
+![alt](link to github page for gif)
+
+### Wiring
+<img src="images/" alt="" height="400">
+
+### Reflection
+
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
