@@ -16,18 +16,18 @@ morseCode = { 'A':'.-', 'B':'-...',
 
 while True:
     print(f"Input text to translate to morse code, or press -q to quit")
-    txt = input().split(' ')
+    txt = input().split(' ')  # split the words
     
     if txt == ['-q']:
-        break
+        break  # break the loop on the quit command
     
     else:
         translation = []
-        for i in range(len(txt)):
-            upperCase = txt[i].upper()
+        for i in range(len(txt)):  # for each word
+            upperCase = txt[i].upper()  # convert to upper case
             for letter in upperCase:
-                translation.append(morseCode[letter])
-                translation.append(' ')
-            translation.append('/')
+                translation.append(morseCode[letter]) # translate each letter
+                translation.append(' ') # add space after each letter
+            translation.append('/')  # add slash between each word
         
-        print(' '.join(translation))
+        print(' '.join(translation))  # join list into one string
