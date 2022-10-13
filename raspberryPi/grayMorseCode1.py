@@ -30,4 +30,4 @@ while True:
                 translation.append(' ') # add space after each letter
             translation.append('/')  # add slash between each word
         
-        print(' '.join(translation))  # join list into one string
+        print(''.join(translation))  # join list into one string
