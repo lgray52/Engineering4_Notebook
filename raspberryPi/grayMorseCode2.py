@@ -36,10 +36,10 @@ while True:
             upperCase = txt[i].upper()  # convert to upper case
             for letter in upperCase:
                 translation.append(morseCode[letter]) # translate each letter
-                translation.append('') # add space after each letter
+                translation.append(' ') # add space after each letter
             translation.append('/')  # add slash between each word
         
-        fullMessage = ' '.join(translation)  # join list into one string
+        fullMessage = ''.join(translation)  # join list into one string
         print(fullMessage)
         
         for character in fullMessage:
@@ -63,3 +63,4 @@ while True:
             sleep(interval)  # pause for a dot length between each character
 
             led.value = False  # make sure the led is turned off at the end
+            
