@@ -276,18 +276,19 @@ That little fact caused a LOT of confusion. Most of the rest of anything confusi
 ## Morse Code 1
 
 ### Description & Code
+This code uses a morse code dictionary to translate text into morse code. It required that the code exit if a user enters "-q" when prompted to enter something to translate. No wiring was needed for this assignment.
 
-
-[Link to Code](link to github page for code)
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayMorseCode1.py)
 
 ### Evidence
 ![alt](link to github page for gif)
 
-### Wiring
-<img src="images/" alt="" height="400">
-
 ### Reflection
-
+This assignment was pretty straightforward. The use of the 
+``` python
+for letter in message
+```
+is pretty nifty, because it makes doing something based on each letter in the text to translate and then referring to that same letter in the loop super easy. The one thing that tripped me up was checking for the quit statement using an if statement - I forgot that it would be formatted as a list and spent a good deal of time trying to figure out the problem before using a print statement in the relevant if statement to check if it was every entering the loop. Print statements were very useful for identifying check points throughout this assignment. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
@@ -295,9 +296,9 @@ That little fact caused a LOT of confusion. Most of the rest of anything confusi
 ## Morse Code 2
 
 ### Description & Code
+This assignment extends the translation of morse code into transmission by blinking an LED. 
 
-
-[Link to Code](link to github page for code)
+[Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayMorseCode2.py)
 
 ### Evidence
 ![alt](link to github page for gif)
