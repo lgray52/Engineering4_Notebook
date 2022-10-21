@@ -2,11 +2,17 @@
 
 
 ## Table Of Contents
-* **Launchpad assignments**
-   * [Launchpad Code 1](https://github.com/lgray52/Engineering4_Notebook#launchpad-1)
+
+<details>
+<summary> Code Assignments </summary>
+
+<details> <summary>  ☙ <b>Launchpad assignments</b> </summary>
+
+   <br> <a href="https://github.com/lgray52/Engineering4_Notebook#launchpad-1">☙ Launchpad Code 1</a>
    * [Launchpad Code 2](https://github.com/lgray52/Engineering4_Notebook#launchpad-2)
    * [Launchpad Code 3](https://github.com/lgray52/Engineering4_Notebook#launchpad-3)
    * [Launchpad Code 4](https://github.com/lgray52/Engineering4_Notebook#launchpad-4)
+   </details>
 * **Crash Avoidance Assignments**
    * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
@@ -20,6 +26,7 @@
   *  [Morse Code 1](https://github.com/lgray52/Engineering4_Notebook#morse-code-1)
   *  [Morse Code 2](https://github.com/lgray52/Engineering4_Notebook#morse-code-2)
 * [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
+</details>
 
 ## Launchpad 1
 
