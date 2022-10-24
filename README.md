@@ -2,24 +2,49 @@
 
 
 ## Table Of Contents
-* **Launchpad assignments**
+
+<details>
+   <summary> <b> Code Assignments </b> </summary>
+
+<details> <summary>  ☙ Launchpad Assignments </summary>
+
    * [Launchpad Code 1](https://github.com/lgray52/Engineering4_Notebook#launchpad-1)
    * [Launchpad Code 2](https://github.com/lgray52/Engineering4_Notebook#launchpad-2)
    * [Launchpad Code 3](https://github.com/lgray52/Engineering4_Notebook#launchpad-3)
    * [Launchpad Code 4](https://github.com/lgray52/Engineering4_Notebook#launchpad-4)
-* **Crash Avoidance Assignments**
+   </details>
+   
+<details> <summary>  ☙ Crash Avoidance Assignments </summary>
+   
    * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
    * [Crash Avoidance 3](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-3)
    * [Crash Avoidance 4](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-4)
-* **Landing Area Assignments**
+   </details>
+
+<details> <summary> ☙ Landing Area Assignments </summary>
+   
   *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
   *  [Landing 2](https://github.com/lgray52/Engineering4_Notebook#landing-area-2)
   *  [Landing 3](https://github.com/lgray52/Engineering4_Notebook#landing-area-3)
-* **Morse Code Assignments**
+   </details>
+   
+<details> <summary> ☙ Morse Code Assignments </summary>
+   
   *  [Morse Code 1](https://github.com/lgray52/Engineering4_Notebook#morse-code-1)
   *  [Morse Code 2](https://github.com/lgray52/Engineering4_Notebook#morse-code-2)
-* [Media Test](https://github.com/lgray52/Engineering4_Notebook#media-test)
+   </details>
+
+</details>
+
+<details> <summary> <b> CAD </b> </summary>
+   
+   <details> <summary> Launcher Toy Assignments </summary> 
+      
+   * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
+   </details>
+
+   </details>
 
 ## Launchpad 1
 
@@ -281,7 +306,7 @@ This code uses a morse code dictionary to translate text into morse code. It req
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayMorseCode1.py)
 
 ### Evidence
-![alt](link to github page for gif)
+![](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/morse1Evidence.gif)
 
 ### Reflection
 This assignment was pretty straightforward. The use of the 
@@ -301,7 +326,7 @@ This assignment extends the translation of morse code into transmission by blink
 [Link to Code](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/grayMorseCode2.py)
 
 ### Evidence
-![alt](link to github page for gif)
+![](https://github.com/lgray52/Engineering4_Notebook/blob/main/images/morse2Evidence.gif)
 
 ### Wiring
 <img src="images/morse2_wiring.png" alt="" height="400">
@@ -311,19 +336,18 @@ This assignment was a good extension of the first one. I did have to modify my o
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
+   
+## 4.1 Ring
 
-## Media Test
+### Description
+I was student A for this assignment, so I made the ring. The ring attaches to the top where the key is pulled. I am working with [Cole](https://github.com/cneal05) on this assignment set.
 
-### Test Link
-[link test](https://www.webhamster.com/)
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/11fb20d534141111f8cc663c)
 
-### Code Link
-[code link](https://github.com/lgray52/Engineering4_Notebook/blob/main/raspberryPi/test.py)
+### Images
+<img src="images/" alt="" height="400">
 
-### Test Image
-<img src="images/stephans_quintet.jpg" alt="NASA Webb telescope image of Stephan's Quintet, five galxies nearby in Earth's sky" height="600">
-
-### Test GIF
-<img src="images/hamster_dance.gif" alt="animated hamsters dancing" height="300">
+### Reflection
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
