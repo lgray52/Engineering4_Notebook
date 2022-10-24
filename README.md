@@ -15,6 +15,7 @@
    </details>
    
 <details> <summary>  ☙ Crash Avoidance Assignments </summary>
+   
    * [Crash Avoidance 1](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-1)
    * [Crash Avoidance 2](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-2)
    * [Crash Avoidance 3](https://github.com/lgray52/Engineering4_Notebook#crash-avoidance-3)
@@ -22,12 +23,14 @@
    </details>
 
 <details> <summary> ☙ Landing Area Assignments </summary>
+   
   *  [Landing 1](https://github.com/lgray52/Engineering4_Notebook#landing-area-1)
   *  [Landing 2](https://github.com/lgray52/Engineering4_Notebook#landing-area-2)
   *  [Landing 3](https://github.com/lgray52/Engineering4_Notebook#landing-area-3)
    </details>
    
 <details> <summary> ☙ Morse Code Assignments </summary>
+   
   *  [Morse Code 1](https://github.com/lgray52/Engineering4_Notebook#morse-code-1)
   *  [Morse Code 2](https://github.com/lgray52/Engineering4_Notebook#morse-code-2)
    </details>
@@ -37,7 +40,8 @@
 <details> <summary> <b> CAD </b> </summary>
    
    <details> <summary> Launcher Toy Assignments </summary> 
-   * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#4.1-ring)
+      
+   * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
    </details>
 
    </details>
