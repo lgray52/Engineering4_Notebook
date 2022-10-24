@@ -346,7 +346,7 @@ I was student A for this assignment, so I made the ring. The ring attaches to th
 [OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/11fb20d534141111f8cc663c)
 
 ### Images
-<img src="images/" alt="" height="400">
+<img src="images/cad/ring_1.PNG" alt="" height="300"> <img src="images/cad/ring_2.PNG" alt="" height="300"> <img src="images/cad/ring_3.PNG" alt="" height="300">
 
 ### Reflection
 
