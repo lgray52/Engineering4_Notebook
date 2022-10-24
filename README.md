@@ -34,10 +34,12 @@
 
 </details>
 
-<details> <summary> <b> CAD </b> 
+<details> <summary> <b> CAD </b> </summary>
+   
    <details> <summary> Launcher Toy Assignments </summary> 
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#4.1-ring)
    </details>
+
    </details>
 
 ## Launchpad 1
