@@ -42,6 +42,7 @@
    <details> <summary> Launcher Toy Assignments </summary> 
       
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
+   * [4.2 - Ring](https://github.com/lgray52/Engineering4_Notebook#42-prop)
    </details>
 
    </details>
@@ -349,5 +350,23 @@ I was student A for this assignment, so I made the ring. The ring attaches to th
 <img src="images/cad/ring_1.PNG" alt="" height="300"> <img src="images/cad/ring_2.PNG" alt="" height="300"> <img src="images/cad/ring_3.PNG" alt="" height="300">
 
 ### Reflection
+This assignment was quite simple. The use feature (keyboard shortcut "u") is helpful to make use of existing geometry. Another useful keyboard shortcut is "w," which allows you to zoom in to the window you select when you activate the shortcut. This assignment also made use of several planes to create intersecting pieces.
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## 4.2 Prop
+
+### Description
+The prop is the little helicopter-type toy that is launched, bey-blade style, from the spinner. Cole and I switched, so I am Student B on this assignment. 
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/518d02f43562175bce0a04ea?renderMode=0&uiState=635817af8760e45d1e2e6835)
+
+### Images
+<img src="images/cad/prop_1.PNG" alt="" height="300"> <img src="images/cad/prop_2.PNG" alt="" height="300">
+
+### Reflection
+This assignment started by making two separate parts from the same sketch. They are then combined with the blades, and merged into one part. This is an interesting way of approaching part design, especially because I never realised that two parts could be combined by connecting them after they have already been created as separate parts. The sweep feature, used in cutting out the channel for the spinner, is a useful tool, allowing you to cut out something along a curve. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
