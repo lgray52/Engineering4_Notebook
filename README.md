@@ -42,7 +42,7 @@
    <details> <summary> Launcher Toy Assignments </summary> 
       
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
-   * [4.2 - Ring](https://github.com/lgray52/Engineering4_Notebook#42-prop)
+   * [4.2 - Prop](https://github.com/lgray52/Engineering4_Notebook#42-prop)
    </details>
 
    </details>
