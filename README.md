@@ -4,7 +4,7 @@
 ## Table Of Contents
 
 <details>
-   <summary> <b> Code Assignments </b> </summary>
+   <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#code">Code Assignments </a> </b> </summary>
 
 <details> <summary>  ☙ Launchpad Assignments </summary>
 
@@ -37,7 +37,7 @@
 
 </details>
 
-<details> <summary> <b> CAD </b> </summary>
+<details> <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#cad"> CAD Assignments - OnShape </a> </b> </summary>
    
    <details> <summary> Launcher Toy Assignments </summary> 
       
@@ -46,6 +46,8 @@
    </details>
 
    </details>
+
+# Code
 
 ## Launchpad 1
 
@@ -337,6 +339,7 @@ This assignment was a good extension of the first one. I did have to modify my o
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
+# CAD
    
 ## 4.1 Ring
 
