@@ -46,9 +46,10 @@
    </details>
    
    <details> <summary> Beam Challenge </summary>
-   * [Beam Design]()
-   * [Simscale]()
-   * [Iterative Design]()
+   *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)\
+   
+   *  [Simscale](https://github.com/lgray52/Engineering4_Notebook#fea-part-2-simscale)
+   *  [Iterative Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-3-iterative-design)
    
    </details>
    
