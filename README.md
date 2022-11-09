@@ -44,7 +44,14 @@
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
    * [4.2 - Prop](https://github.com/lgray52/Engineering4_Notebook#42-prop)
    </details>
-
+   
+   <details> <summary> Beam Challenge </summary>
+   * [Beam Design]()
+   * [Simscale]()
+   * [Iterative Design]()
+   
+   </details>
+   
    </details>
 
 # Code
@@ -371,5 +378,50 @@ The prop is the little helicopter-type toy that is launched, bey-blade style, fr
 
 ### Reflection
 This assignment started by making two separate parts from the same sketch. They are then combined with the blades, and merged into one part. This is an interesting way of approaching part design, especially because I never realised that two parts could be combined by connecting them after they have already been created as separate parts. The sweep feature, used in cutting out the channel for the spinner, is a useful tool, allowing you to cut out something along a curve. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 1: Beam Design
+
+### Description
+This is the first assignment in a partner challenge to build a beam that holds the most weight without bending. I worked with [Asher](https://github.com/afriedm49) on this assignment set. The constraints were that the beam weighed less than 13g in PLA, the attachment for the weight was 180mm from the attachment block, and that the beam was easily printable with no overhangs. 
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
+
+### Reflection
+For the first iteration of the beam design, Asher and I worked together to decide on the design. We went through a couple different versions, starting with an hourglass type of shape, but ended up significantly over the weight limit. Eventually, after a lot of redesigning and trying to reduce the weight and profile, we ended up with a triangular prism design, since triangles are structurally supportive. We included cutouts to decrease the weight, also triangularly shaped. It would have been better if the triangle was equilateral, but because of the dimensions of the attachment block we ended up with an isoceles triangular prism. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 2: Simscale
+
+### Description
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
+
+### Reflection
+
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 3: Iterative Design
+
+### Description
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
+
+### Reflection
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
