@@ -4,7 +4,7 @@
 ## Table Of Contents
 
 <details>
-   <summary> <b> Code Assignments </b> </summary>
+   <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#code">Code Assignments </a> </b> </summary>
 
 <details> <summary>  ☙ Launchpad Assignments </summary>
 
@@ -37,14 +37,25 @@
 
 </details>
 
-<details> <summary> <b> CAD </b> </summary>
+<details> <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#cad"> CAD Assignments - OnShape </a> </b> </summary>
    
    <details> <summary> Launcher Toy Assignments </summary> 
       
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
+   * [4.2 - Prop](https://github.com/lgray52/Engineering4_Notebook#42-prop)
+   </details>
+   
+   <details> <summary> Beam Challenge </summary>
+
+   *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)
+   *  [Simscale](https://github.com/lgray52/Engineering4_Notebook#fea-part-2-simscale)
+   *  [Iterative Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-3-iterative-design)
+   
+   </details>
+   
    </details>
 
-   </details>
+# Code
 
 ## Launchpad 1
 
@@ -336,6 +347,7 @@ This assignment was a good extension of the first one. I did have to modify my o
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
+# CAD
    
 ## 4.1 Ring
 
@@ -346,7 +358,72 @@ I was student A for this assignment, so I made the ring. The ring attaches to th
 [OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/11fb20d534141111f8cc663c)
 
 ### Images
-<img src="images/" alt="" height="400">
+<img src="images/cad/ring_1.PNG" alt="" height="300"> <img src="images/cad/ring_2.PNG" alt="" height="300"> <img src="images/cad/ring_3.PNG" alt="" height="300">
+
+### Reflection
+This assignment was quite simple. The use feature (keyboard shortcut "u") is helpful to make use of existing geometry. Another useful keyboard shortcut is "w," which allows you to zoom in to the window you select when you activate the shortcut. This assignment also made use of several planes to create intersecting pieces.
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## 4.2 Prop
+
+### Description
+The prop is the little helicopter-type toy that is launched, bey-blade style, from the spinner. Cole and I switched, so I am Student B on this assignment. 
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/518d02f43562175bce0a04ea?renderMode=0&uiState=635817af8760e45d1e2e6835)
+
+### Images
+<img src="images/cad/prop_1.PNG" alt="" height="300"> <img src="images/cad/prop_2.PNG" alt="" height="300">
+
+### Reflection
+This assignment started by making two separate parts from the same sketch. They are then combined with the blades, and merged into one part. This is an interesting way of approaching part design, especially because I never realised that two parts could be combined by connecting them after they have already been created as separate parts. The sweep feature, used in cutting out the channel for the spinner, is a useful tool, allowing you to cut out something along a curve. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 1: Beam Design
+
+### Description
+This is the first assignment in a partner challenge to build a beam that holds the most weight without bending. I worked with [Asher](https://github.com/afriedm49) on this assignment set. The constraints were that the beam weighed less than 13g in PLA, the attachment for the weight was 180mm from the attachment block, and that the beam was easily printable with no overhangs. 
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
+
+### Reflection
+For the first iteration of the beam design, Asher and I worked together to decide on the design. We went through a couple different versions, starting with an hourglass type of shape, but ended up significantly over the weight limit. Eventually, after a lot of redesigning and trying to reduce the weight and profile, we ended up with a triangular prism design, since triangles are structurally supportive. We included cutouts to decrease the weight, also triangularly shaped. It would have been better if the triangle was equilateral, but because of the dimensions of the attachment block we ended up with an isoceles triangular prism. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 2: Simscale
+
+### Description
+
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
+
+### Reflection
+
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
+## FEA Part 3: Iterative Design
+
+### Description
+
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
+
+### Images
 
 ### Reflection
 
