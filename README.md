@@ -392,6 +392,7 @@ This is the first assignment in a partner challenge to build a beam that holds t
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<img src="images/cad/beam1.PNG" height="300"> <img src="images/cad/beam2.PNG" height="300">
 
 ### Reflection
 For the first iteration of the beam design, Asher and I worked together to decide on the design. We went through a couple different versions, starting with an hourglass type of shape, but ended up significantly over the weight limit. Eventually, after a lot of redesigning and trying to reduce the weight and profile, we ended up with a triangular prism design, since triangles are structurally supportive. We included cutouts to decrease the weight, also triangularly shaped. It would have been better if the triangle was equilateral, but because of the dimensions of the attachment block we ended up with an isoceles triangular prism. 
@@ -402,12 +403,13 @@ For the first iteration of the beam design, Asher and I worked together to decid
 ## FEA Part 2: Simscale
 
 ### Description
-
+The purpose of this assignment was to simulate placing 3kg on the beam to see how far it would deflect and the potential breaking points with the most stress on them. Using the online simulator SimScale, you can import geometry straight from OnShape and test it.
 
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<img src="images/cad/fea_deflection.PNG" height="300"> <img src="images/cad/fea_stress.PNG" height="300"> <img src="images/cad/fea_stress2.PNG" height="300">
 
 ### Reflection
 
@@ -424,6 +426,13 @@ For the first iteration of the beam design, Asher and I worked together to decid
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<b> OnShape </b>
+
+<img src="images/cad/beam_final.PNG" height="300"> 
+
+<b> Real beam before and after </b>
+
+<img src="images/cad/beam_actual1.jpg" height="400"> <img src="images/cad/beam_actual2.jpg" height="400">
 
 ### Reflection
 
