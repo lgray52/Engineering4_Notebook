@@ -46,8 +46,8 @@
    </details>
    
    <details> <summary> Beam Challenge </summary>
-   *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)\
-   
+
+   *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)
    *  [Simscale](https://github.com/lgray52/Engineering4_Notebook#fea-part-2-simscale)
    *  [Iterative Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-3-iterative-design)
    
@@ -403,6 +403,7 @@ For the first iteration of the beam design, Asher and I worked together to decid
 
 ### Description
 
+
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
@@ -417,6 +418,7 @@ For the first iteration of the beam design, Asher and I worked together to decid
 ## FEA Part 3: Iterative Design
 
 ### Description
+
 
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
