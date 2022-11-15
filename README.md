@@ -39,13 +39,13 @@
 
 <details> <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#cad"> CAD Assignments - OnShape </a> </b> </summary>
    
-   <details> <summary> Launcher Toy Assignments </summary> 
+   <details> <summary> ☙ Launcher Toy Assignments </summary> 
       
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
    * [4.2 - Prop](https://github.com/lgray52/Engineering4_Notebook#42-prop)
    </details>
    
-   <details> <summary> Beam Challenge </summary>
+   <details> <summary> ☙ Beam Challenge </summary>
 
    *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)
    *  [Simscale](https://github.com/lgray52/Engineering4_Notebook#fea-part-2-simscale)
