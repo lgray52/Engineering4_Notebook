@@ -409,10 +409,16 @@ The purpose of this assignment was to simulate placing 3kg on the beam to see ho
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
-<img src="images/cad/fea_deflection.PNG" height="300"> <img src="images/cad/fea_stress.PNG" height="300"> <img src="images/cad/fea_stress2.PNG" height="300">
+<b> Deflection </b>
+
+<img src="images/cad/fea_deflection.PNG" height="300"> 
+
+<b> Stress </b>
+
+<img src="images/cad/fea_stress.PNG" height="225"> <img src="images/cad/fea_stress2.PNG" height="225">
 
 ### Reflection
-
+SimScale is a really cool tool as it allows you to simulate the effect of placing weight on the beam. Seeing the stress points allows you to pinpoint where it will break, which is very helpful for effectively redesigning the beam. Additionally, it's pretty easy to use and understand. The user interface is great and the company even sends you an email when your simulation finishes running. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
@@ -420,7 +426,7 @@ The purpose of this assignment was to simulate placing 3kg on the beam to see ho
 ## FEA Part 3: Iterative Design
 
 ### Description
-
+Using the results of the SimScale simulations, we redesigned the beam to compensate for the weak points and the bending. We tried adding vertical supports down the middle, but those made very little difference, so we changed them to diagonal supports instead. 
 
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
@@ -435,5 +441,6 @@ The purpose of this assignment was to simulate placing 3kg on the beam to see ho
 <img src="images/cad/beam_actual1.jpg" height="400"> <img src="images/cad/beam_actual2.jpg" height="400">
 
 ### Reflection
+Our final beam supported 2.056 kg before breaking the deflection limit of 35mm and 2.516 before it broke. It broke exactly where SimScale predicted the point of highest stress would be, which was pretty cool. Overall, this challenge was a good introduction to SimScale and was useful as it required considering real-life mechanics and strength when designing in CAD, which is not something that we have done when working on projects. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
