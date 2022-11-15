@@ -383,6 +383,23 @@ This assignment started by making two separate parts from the same sketch. They 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
+## 4.3 Assembly
+
+### Description
+I was student B on this assignment. We just had to assemble all of the parts into one functional assembly.
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/518d02f43562175bce0a04ea?renderMode=0&uiState=635817af8760e45d1e2e6835)
+
+### Images
+<img src="images/cad/" height="300">
+
+### Reflection
+The assembly itself was pretty straightforward as we had to follow along with the directions we were given. At one point we were told to insert socket head screws directly into the place we wanted them, which required unhiding all the mate connectors and clicking on each place we wanted a screw to go to. Another thing that the directions told us was going to happen was the key might not align correctly when you were mating it into the copter, and you have to section view so that you can actually see where you are mating. But our key ended up aligning perfectly without having to do that. The rack and pinion relation was a really cool feature that allowed the key pull to actually rotate the prop like it would in real life, which is super useful for visualising the assembly. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
 ## FEA Part 1: Beam Design
 
 ### Description
