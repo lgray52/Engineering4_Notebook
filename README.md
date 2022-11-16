@@ -39,13 +39,13 @@
 
 <details> <summary> <b> <a href="https://github.com/lgray52/Engineering4_Notebook#cad"> CAD Assignments - OnShape </a> </b> </summary>
    
-   <details> <summary> Launcher Toy Assignments </summary> 
+   <details> <summary> ☙ Launcher Toy Assignments </summary> 
       
    * [4.1 - Ring](https://github.com/lgray52/Engineering4_Notebook#41-ring)
    * [4.2 - Prop](https://github.com/lgray52/Engineering4_Notebook#42-prop)
    </details>
    
-   <details> <summary> Beam Challenge </summary>
+   <details> <summary> ☙ Beam Challenge </summary>
 
    *  [Beam Design](https://github.com/lgray52/Engineering4_Notebook#fea-part-1-beam-design)
    *  [Simscale](https://github.com/lgray52/Engineering4_Notebook#fea-part-2-simscale)
@@ -383,6 +383,23 @@ This assignment started by making two separate parts from the same sketch. They 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
 
+## 4.3 Assembly
+
+### Description
+I was student B on this assignment. We just had to assemble all of the parts into one functional assembly.
+
+### Evidence
+[OnShape Document](https://cvilleschools.onshape.com/documents/bd4a30d821e22581a9b814bb/w/3924901670c70451ae4c5c93/e/518d02f43562175bce0a04ea?renderMode=0&uiState=635817af8760e45d1e2e6835)
+
+### Images
+<img src="images/cad/" height="300">
+
+### Reflection
+The assembly itself was pretty straightforward as we had to follow along with the directions we were given. At one point we were told to insert socket head screws directly into the place we wanted them, which required unhiding all the mate connectors and clicking on each place we wanted a screw to go to. Another thing that the directions told us was going to happen was the key might not align correctly when you were mating it into the copter, and you have to section view so that you can actually see where you are mating. But our key ended up aligning perfectly without having to do that. The rack and pinion relation was a really cool feature that allowed the key pull to actually rotate the prop like it would in real life, which is super useful for visualising the assembly. 
+
+[Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+
 ## FEA Part 1: Beam Design
 
 ### Description
@@ -392,6 +409,7 @@ This is the first assignment in a partner challenge to build a beam that holds t
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<img src="images/cad/beam1.PNG" height="300"> <img src="images/cad/beam2.PNG" height="300">
 
 ### Reflection
 For the first iteration of the beam design, Asher and I worked together to decide on the design. We went through a couple different versions, starting with an hourglass type of shape, but ended up significantly over the weight limit. Eventually, after a lot of redesigning and trying to reduce the weight and profile, we ended up with a triangular prism design, since triangles are structurally supportive. We included cutouts to decrease the weight, also triangularly shaped. It would have been better if the triangle was equilateral, but because of the dimensions of the attachment block we ended up with an isoceles triangular prism. 
@@ -402,15 +420,22 @@ For the first iteration of the beam design, Asher and I worked together to decid
 ## FEA Part 2: Simscale
 
 ### Description
-
+The purpose of this assignment was to simulate placing 3kg on the beam to see how far it would deflect and the potential breaking points with the most stress on them. Using the online simulator SimScale, you can import geometry straight from OnShape and test it.
 
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<b> Deflection </b>
+
+<img src="images/cad/fea_deflection.PNG" height="300"> 
+
+<b> Stress </b>
+
+<img src="images/cad/fea_stress.PNG" height="225"> <img src="images/cad/fea_stress2.PNG" height="225">
 
 ### Reflection
-
+SimScale is a really cool tool as it allows you to simulate the effect of placing weight on the beam. Seeing the stress points allows you to pinpoint where it will break, which is very helpful for effectively redesigning the beam. Additionally, it's pretty easy to use and understand. The user interface is great and the company even sends you an email when your simulation finishes running. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
 
@@ -418,13 +443,21 @@ For the first iteration of the beam design, Asher and I worked together to decid
 ## FEA Part 3: Iterative Design
 
 ### Description
-
+Using the results of the SimScale simulations, we redesigned the beam to compensate for the weak points and the bending. We tried adding vertical supports down the middle, but those made very little difference, so we changed them to diagonal supports instead. 
 
 ### Evidence
 [OnShape Document](https://cvilleschools.onshape.com/documents/135793b07c3e73109ccb7f6d/w/2e28a741b39a56ee177063a1/e/6cefb090dabb9c35e73cad40?renderMode=0&uiState=636bfaf737b6be47af1aa8ec)
 
 ### Images
+<b> OnShape </b>
+
+<img src="images/cad/beam_final.PNG" height="300"> 
+
+<b> Real beam before and after </b>
+
+<img src="images/cad/beam_actual1.jpg" height="400"> <img src="images/cad/beam_actual2.jpg" height="400">
 
 ### Reflection
+Our final beam supported 2.056 kg before breaking the deflection limit of 35mm and 2.516 before it broke. It broke exactly where SimScale predicted the point of highest stress would be, which was pretty cool. Overall, this challenge was a good introduction to SimScale and was useful as it required considering real-life mechanics and strength when designing in CAD, which is not something that we have done when working on projects. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
