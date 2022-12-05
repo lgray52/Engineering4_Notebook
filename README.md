@@ -53,6 +53,8 @@
    
    </details>
    
+   * [Simscale Airflow Simulation](https://github.com/lgray52/Engineering4_Notebook#airflow-simulation)
+   
    </details>
 
 # Code
@@ -461,3 +463,14 @@ Using the results of the SimScale simulations, we redesigned the beam to compens
 Our final beam supported 2.056 kg before breaking the deflection limit of 35mm and 2.516 before it broke. It broke exactly where SimScale predicted the point of highest stress would be, which was pretty cool. Overall, this challenge was a good introduction to SimScale and was useful as it required considering real-life mechanics and strength when designing in CAD, which is not something that we have done when working on projects. 
 
 [Back to Table of Contents](https://github.com/lgray52/Engineering4_Notebook#table-of-contents)
+
+## Airflow Simulation
+
+### Description
+I chose to do the "Incompressible Turbulent Airflow Around a Spoiler" tutorial. This walked through setting up, running, and processing an airflow simulation for a car spoiler. 
+
+### Images
+<img src="images/cad/particle_trace.gif" height="400">
+
+### Reflection
+This assignment served as an introduction to using SimScale to simulate airflow and motion. This is useful for the upcoming Pi in the Sky project, where things will be launched through the air. To be honest, the tutorial was easy to follow but difficult to understand. It was unclear why each step was done or even what the point of the spoiler was. Overall, the tutorial was good but my understanding was not supplemented by it. 
